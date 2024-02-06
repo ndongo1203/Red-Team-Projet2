@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBell } from "@fortawesome/free-solid-svg-icons";
 import { Form, InputGroup, Navbar, Container, Nav, Dropdown, ListGroup, Image } from "@themesberg/react-bootstrap";
+import "../../assets/Style.css"
 
 const Notification = (props) => {
   const { link, sender, image, time, message, read = false } = props;
@@ -32,6 +33,16 @@ function ContenuNav() {
     setNotifications(notifications.map((n) => ({ ...n, read: true })));
   };
 
+  const navStyle = {
+    alignItems: "center",
+    position: "relative",
+    left: "90vh",
+  };
+
+  const navStyleMobile = {
+    left: "10px",
+  };
+
   return (
     <div>
       <Navbar variant="dark" expanded className="ps-0 pe-2">
@@ -40,14 +51,14 @@ function ContenuNav() {
             <div className="d-flex align-items-center">
               <Form className="navbar-search">
                 <Form.Group id="topbarSearch">
-                  <InputGroup className="input-group-merge search-bar">
+                  <InputGroup className="input-group-merge search-bar mx-5">
                     <InputGroup.Text><FontAwesomeIcon icon={faSearch} /></InputGroup.Text>
                     <Form.Control type="text" placeholder="Search" />
                   </InputGroup>
                 </Form.Group>
               </Form>
             </div>
-            <Nav className="align-items-center" style={{ position: "relative", left: "110vh", }}>
+            <Nav className="align-items-center thisNav" style={window.innerWidth <= 767 ? { ...navStyle, ...navStyleMobile } : navStyle}>
               <Dropdown as={Nav.Item} onToggle={markNotificationsAsRead}>
                 <Dropdown.Toggle as={Nav.Link} className="text-dark icon-notifications me-lg-3">
                   <span className="icon icon-sm">
@@ -70,7 +81,7 @@ function ContenuNav() {
                 </Dropdown.Menu>
               </Dropdown>
 
-              <Dropdown as={Nav.Item}>
+              <Dropdown as={Nav.Item} className="DropdownProfile">
               <p className='this-profile mt-3'>
               <img style={{
                 width: "40px",

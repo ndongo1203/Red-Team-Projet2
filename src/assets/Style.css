@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+    .input-group-merge.search-bar {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .menu-controller-icon{
+        display: none;
+    }
+
+    .DropdownProfile .profile-image{
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 100%;
+    }
+
+    .PanerSidebar{
+        line-height: 100vh !important;
+        margin-bottom: 4vh !important;
+    }
+
+    .textFooter{
+        display: flex;
+        justify-content: center;
+    }
+    
+  }

@@ -5,6 +5,7 @@ import Header from "../../components/dashboardContenu/header";
 import PageVisitsTable from "components/dashboardContenu/PageVisitsTable";
 import GraphiqueCourbe from "components/dashboardContenu/GraphiqueCourbe";
 import TeamMember from "components/dashboardContenu/TeamMember";
+import Footer from "components/dashboardContenu/Footer";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <ReusableCard />
       <PageVisitsTable />
       <TeamMember />
+      <Footer />
     </div>
   )
 }
