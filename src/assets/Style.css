@@ -1,8 +1,19 @@
+.MySidebar #IconeSidebar {
+    display: none;
+} 
+
 @media (max-width: 767px) {
     .input-group-merge.search-bar {
       margin-left: 0 !important;
       margin-right: 0 !important;
     }
+
+    .MySidebar #IconeSidebar {
+        display: block;
+        color: #fff !important;
+        left: 20vh;
+        bottom: 5px;
+    } 
 
     #IconeNavbar{
         margin-left: 0px;

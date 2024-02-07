@@ -9,7 +9,7 @@ import Footer from "components/dashboardContenu/Footer";
 
 function HomePage() {
   return (
-    <div>
+    <div className="p-3">
       <Header />
       <GraphiqueCourbe />
       <ReusableCard />

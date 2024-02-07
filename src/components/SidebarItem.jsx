@@ -30,7 +30,7 @@ const SidebarItem = ({
 }) => {
   const { path, label } = linkItem;
   return (
-    <LinkItem className="PanerSidebar"
+    <LinkItem className="PanerSidebar mt-2"
       color={linkColor}
       coloronhover={colorOnHover}
       // coloronactive={'rgba(0,5,10,.5)'}
