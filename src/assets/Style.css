@@ -12,7 +12,8 @@
         display: block;
         color: #fff !important;
         left: 20vh;
-        bottom: 5px;
+        margin-top: 35px !important;
+        font-size: 15px !important;
     } 
 
     #IconeNavbar{
