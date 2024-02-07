@@ -99,9 +99,9 @@ const SpliTemplateScreen = ({ children }) => {
       <NavbarPanel openedMenu={!sidebarVisible} minViewPort={minViewPort}>
         <MenuController id="IconeNavbar" onClick={handleToggleSidebar}>
           {openedMenu ? (
-            <FiAlignRight className="menu-controller-icon col mx-4 fs-1 bg-transparent bg-danger" />
+            <FiAlignRight className="menu-controller-icon col mx-4 fs-1 bg-transparent" />
           ) : (
-            <FiAlignLeft className="menu-controller-icon mx-4 fs-1 bg-transparent" />
+            <FiAlignLeft className="menu-controller-icon mx-4 fs-1 bg-transparent mt-2" />
           )}
         </MenuController>
         {navbar}
@@ -112,7 +112,7 @@ const SpliTemplateScreen = ({ children }) => {
             {children[1]}
             <MenuController id="IconeSidebar" onClick={handleToggleSidebar}>
               {openedMenu ? (
-                <FiAlignRight className="menu-controller-icon col mx-4 fs-1 bg-transparent bg-danger" />
+                <FiAlignRight className="menu-controller-icon col mx-4 fs-1 bg-transparent" />
               ) : (
                 <FiAlignLeft className="menu-controller-icon mx-4 fs-1 bg-transparent" />
               )}
