@@ -4,8 +4,13 @@
       margin-right: 0 !important;
     }
 
-    .menu-controller-icon{
-        display: none;
+    #IconeNavbar{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .navbar-search{
+        margin-left: 35px;
     }
 
     .DropdownProfile .profile-image{

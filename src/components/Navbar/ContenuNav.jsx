@@ -33,22 +33,22 @@ function ContenuNav() {
     setNotifications(notifications.map((n) => ({ ...n, read: true })));
   };
 
-  const navStyle = {
-    alignItems: "center",
-    position: "relative",
-    left: "90vh",
-  };
+  // const navStyle = {
+  //   alignItems: "center",
+  //   position: "relative",
+  //   left: "90vh",
+  // };
 
-  const navStyleMobile = {
-    left: "10px",
-  };
+  // const navStyleMobile = {
+  //   left: "10px",
+  // };
 
   return (
     <div>
-      <Navbar variant="dark" expanded className="ps-0 pe-2">
+      <Navbar variant="dark" expanded className="">
         <Container fluid className="">
-          <div className="d-flex justify-content-between align-items-center w-100">
-            <div className="d-flex align-items-center">
+          <div className="d-flex justify-content-between w-100">
+            <div className="d-flex">
               <Form className="navbar-search">
                 <Form.Group id="topbarSearch">
                   <InputGroup className="input-group-merge search-bar mx-5">
@@ -58,7 +58,7 @@ function ContenuNav() {
                 </Form.Group>
               </Form>
             </div>
-            <Nav className="align-items-center thisNav" style={window.innerWidth <= 767 ? { ...navStyle, ...navStyleMobile } : navStyle}>
+            <Nav className="">
               <Dropdown as={Nav.Item} onToggle={markNotificationsAsRead}>
                 <Dropdown.Toggle as={Nav.Link} className="text-dark icon-notifications me-lg-3">
                   <span className="icon icon-sm">
@@ -82,7 +82,7 @@ function ContenuNav() {
               </Dropdown>
 
               <Dropdown as={Nav.Item} className="DropdownProfile">
-              <p className='this-profile mt-3'>
+              <p className='this-profile'>
               <img style={{
                 width: "40px",
                 height: "40px",
